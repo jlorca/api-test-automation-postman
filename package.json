@@ -1,0 +1,24 @@
+{
+  "name": "api-test-automation-postman",
+  "version": "1.0.0",
+  "description": "Test Automation Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run postman/ReqRes.postman_collection.json --environment postman/ReqRes.postman_environment.json",
+    "test-report": "newman run postman/ReqRes.postman_collection.json --environment postman/ReqRes.postman_environment.json -r htmlextra"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlorca/api-test-automation-postman.git"
+  },
+  "author": "Jesus Lorca Luque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlorca/api-test-automation-postman/issues"
+  },
+  "homepage": "https://github.com/jlorca/api-test-automation-postman#readme",
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
